@@ -1,4 +1,5 @@
 #numbers
+#numbers
 numbers = []
 for capt in range(5):
     try:
@@ -13,7 +14,22 @@ for capt in range(5):
 smallest = numbers[0]
 
 if smallest > numbers[1]:
-	smallest = numbers [1]
+    smallest = numbers [1]
+
+if smallest > numbers [2]:
+    smallest = numbers[2]
+
+if smallest > numbers [2]:
+    smallest = numbers [2]
+
+if smallest > numbers [3]:
+    smallest = numbers [3]
+    
+if smallest > numbers [4]:
+    smallest = numbers [4]
+    
+if smallest > numbers[1]:
+    smallest = numbers [1]
 
 if smallest > numbers [2]:
     smallest = numbers[2]

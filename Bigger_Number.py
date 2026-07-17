@@ -11,7 +11,7 @@ for capt in range(5):
 
 #Bigger
 bigger = numbers[0]
-
+    
 if bigger < numbers[1]:
     bigger = numbers [1]
 
