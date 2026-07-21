@@ -1,10 +1,26 @@
+while True:
+    try:
+        how_many = int(input('Enter the number of times you want to add data: '))
+        if how_many > 0:
+            break
+        print('Please enter a number greater than 0.')
+    except ValueError:
+        print('Error: Enter a valid whole number.')
+
 objects = []
-# loop
-try:
-	how_many = str(input('Enter a many Enter the number of times you want to add data: '))
-except ValueError:
-    print('Enter a correct number of times in numbers')
-for count in range (how_many):
-    ask = int(input('Type a object'))
-    capt = str(input('type the selected object'))
-    objects.append(capt)
+
+for i in range(how_many):
+    ask = input(f'Type object #{i + 1}: ').strip()
+    objects.append(ask)
+
+print('\nCollected objects list:', objects)
+
+counts = {}
+
+for item in objects:
+    if item in counts:
+        counts[item] += 1
+    else:
+        counts[item] = 1
+
+print('Final count:', counts)
