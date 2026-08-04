@@ -1,94 +1,64 @@
-# Python Log Manager
+# Week 09 — Algoritmos Básicos
 
-A command-line log management system developed in **Python** with **JSON persistence**.
+## Objetivo
 
-This project was created to practice programming fundamentals such as **functions, lists, dictionaries, file handling, input validation, and data persistence**.
-
----
-
-## Features
-
-* Add new logs
-* Display all logs
-* Search logs by **name**
-* Search logs by **action**
-* Search logs by **hour**
-* Remove logs
-* Count registered logs
-* Save and load data using **JSON**
+Praticar os fundamentos da lógica de programação utilizando listas, laços de repetição, condicionais e dicionários.
 
 ---
 
-## Technologies Used
+## Exercícios
 
-* **Python 3**
-* **JSON**
-* **OS module**
-
----
-
-## Project Structure
-
-```
-python-log-manager/
-│
-├── main.py
-├── saves_logs.json
-└── README.md
-```
+| Arquivo                           | Descrição                             |
+| --------------------------------- | ------------------------------------- |
+| `exercise01_biggest.py`           | Encontrar o maior número de uma lista |
+| `exercise02_smallest.py`          | Encontrar o menor número de uma lista |
+| `exercise03_count_occurrences.py` | Contar ocorrências de elementos       |
+| `exercise04_remove_duplicates.py` | Remover elementos duplicados          |
+| `exercise05_reverse_list.py`      | Inverter uma lista manualmente        |
+| `exercise06_linear_search.py`     | Implementar busca linear              |
+| `exercise07_filter_even.py`       | Filtrar números pares                 |
+| `exercise08_manual_sum.py`        | Somar valores sem `sum()`             |
+| `exercise09_average.py`           | Calcular média manualmente            |
+| `exercise10_frequency_ranking.py` | Criar ranking de frequência           |
 
 ---
 
-## How to Run
+## Conceitos Praticados
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/YOUR_USERNAME/python-log-manager.git
-```
-
-2. Open the project folder:
-
-```bash
-cd python-log-manager
-```
-
-3. Run the application:
-
-```bash
-python main.py
-```
+* listas;
+* laços `for`;
+* condicionais `if`;
+* dicionários;
+* contadores;
+* acumuladores;
+* manipulação de dados;
+* organização de funções simples.
 
 ---
 
-## Learning Objectives
+## Restrições
 
-During this project I practiced:
+Durante os exercícios foram evitadas funções prontas como:
 
-* Function creation
-* Lists and dictionaries
-* Data validation
-* JSON serialization and deserialization
-* File persistence
-* Basic error handling
-* Project organization
-* Git and GitHub workflow
-
----
-
-## Future Improvements
-
-* Edit existing logs
-* Export logs to CSV
-* Sort logs by time
-* Add user authentication
-* Implement a graphical interface
-* Store data using SQLite
+* `max()`
+* `min()`
+* `sum()`
+* `sorted()`
+* `sort()`
+* `reverse()`
+* `set()`
+* `Counter`
 
 ---
 
-## Author
+## Aprendizados
 
-**João Lucas Pimentel**
+Nesta semana foram consolidados os seguintes pontos:
 
-Python • Cybersecurity • Linux • Networking
+* percorrer listas manualmente;
+* comparar valores;
+* armazenar contagens em dicionários;
+* construir algoritmos sem depender excessivamente de funções prontas;
+* organizar soluções em múltiplos arquivos;
+* utilizar Git e GitHub para registrar a evolução do projeto.
+
