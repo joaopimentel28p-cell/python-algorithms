@@ -21,9 +21,9 @@ for n in range (how_many):
   
 n = len(numbers)
 for u in range (n):
-    for j in range (0, n -1):
-        if numbers[j + 1] > j:
-            numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
+    for m in range (0, n -1):
+        if numbers[m + 1] > m:
+            numbers[m], numbers[m + 1] = numbers[m + 1], numbers[m]
             
 second_biggest = numbers[2]
             
