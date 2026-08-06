@@ -1,30 +1,25 @@
-# Quantas vezes o usuário deseja incluir dados
 while True:
-	try:
-		how_many = int(input('How many times do you want to enter numbers: '))
-		if how_many > 0:
-			break
-	except ValueError:
-		print ('Your need enter numbers only.')
-		continue
+    try:
+        how_many = int(input("How many numbers do you want to enter (at least 2): "))
+        if how_many >= 2:
+            break
+        print("Please, enter at least two numbers.")
+    except ValueError:
+        print("You need to enter a whole number.")
 
-# Lista de Números inseridos (A base pra execução principal)
 numbers = []
+for index in range(how_many):
+    while True:
+        try:
+            numbers.append(int(input(f"Enter the {index + 1}º number: ")))
+            break
+        except ValueError:
+            print("You need to enter numbers only.")
 
-# Inserir Números
-for n in range (how_many):
-	try:
-		add = int(input(f'Enter a {n+ 1}º number: '))
-		numbers.append(add)
-	except ValueError:
-		print("Your need enter numbers only.")
-  
-n = len(numbers)
-for u in range (n):
-    for m in range (0, n -1):
-        if numbers[m + 1] > m:
-            numbers[m], numbers[m + 1] = numbers[m + 1], numbers[m]
-            
-second_biggest = numbers[2]
-            
-print(f"the second biggest number entered is {second_biggest}")
+for _ in range(len(numbers)):
+    for index in range(len(numbers) - 1):
+        if numbers[index] < numbers[index + 1]:
+            numbers[index], numbers[index + 1] = numbers[index + 1], numbers[index]
+
+second_biggest = numbers[1]
+print(f"The second biggest number entered is {second_biggest}.")

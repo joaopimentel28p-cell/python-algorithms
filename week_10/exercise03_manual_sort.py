@@ -1,27 +1,24 @@
-try:
-	while True:
-		how_many = int(input('How many times do you want to enter numbers: '))
-		if how_many > 0:
-			break
-		print ('Please, enter a positive number!')
-except ValueError:
-    print ('You have enter one number!')
-    
-numbers = []
+while True:
+    try:
+        how_many = int(input("How many numbers do you want to enter: "))
+        if how_many > 0:
+            break
+        print("Please, enter a positive number.")
+    except ValueError:
+        print("You need to enter a whole number.")
 
-for n in range (how_many):
-	while True:
-		try:
-			add = int(input(f'Enter a {n+ 1}º number: '))
-			numbers.append(add)
-			break
-		except ValueError:
-			print ('Your have type a numbers')
-	
-n = len(numbers)
-for u in range (n):
-    for m in range (0, n -1):
-        if numbers[m + 1] > numbers[m]:
-            numbers[m], numbers[m + 1] = numbers[m + 1], numbers[m]
-            
-print (numbers)
+numbers = []
+for index in range(how_many):
+    while True:
+        try:
+            numbers.append(int(input(f"Enter the {index + 1}º number: ")))
+            break
+        except ValueError:
+            print("You need to enter numbers only.")
+
+for _ in range(len(numbers)):
+    for index in range(len(numbers) - 1):
+        if numbers[index] > numbers[index + 1]:
+            numbers[index], numbers[index + 1] = numbers[index + 1], numbers[index]
+
+print(numbers)
